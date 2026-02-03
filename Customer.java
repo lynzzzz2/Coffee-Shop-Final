@@ -16,3 +16,11 @@ public class Customer {
         return "I am the Customer class. I store the customer’s name and handle actions like placing an order.";
     }
 }
+
+public Order(int orderNumber, Customer customer, String coffeeType) {
+        this.orderNumber = orderNumber;
+        this.customer = customer;
+        this.coffee = new Coffee(coffeeType); // Created inside → Composition
+    }
+
+    public String processOrder() {
