@@ -11,3 +11,9 @@ public class Order {
         this.customer = customer;
         this.coffee = new Coffee(coffeeType); // Created inside → Composition
     }
+
+     public String processOrder() {
+        return "Processing Order #" + orderNumber + "\n"
+                + customer.placeOrder() + "\n"
+                + coffee.brew();
+    }
