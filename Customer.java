@@ -17,10 +17,6 @@ public class Customer {
     }
 }
 
-public Order(int orderNumber, Customer customer, String coffeeType) {
-        this.orderNumber = orderNumber;
-        this.customer = customer;
-        this.coffee = new Coffee(coffeeType); // Created inside → Composition
-    }
+
 
    
